@@ -20,16 +20,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter>
-
-    <Link to="/addProduct">Add Product</Link>
-
-    <Routes>
-      <Route path="/addProduct" element={<ProductAdd />} />
-        
-    
-      </Routes>
-
+    <div>
       <h1>Products</h1>
       {products.map((product) => (
         <div key={product.id}>
@@ -37,7 +28,7 @@ function App() {
           <p>Price: ₹{product.price}</p>
         </div>
       ))}
-    </BrowserRouter>
+    </div>
   );
 }
 

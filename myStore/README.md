@@ -1,16 +1,115 @@
-# React + Vite
+my-fullstack-app/
+│
+├── client/                         # React Frontend
+│   ├── public/
+│   │   ├── images/
+│   │   └── icons/
+│   │
+│   ├── src/
+│   │   ├── assets/
+│   │   │   ├── images/
+│   │   │   └── icons/
+│   │   │
+│   │   ├── components/
+│   │   │   ├── Navbar/
+│   │   │   ├── Footer/
+│   │   │   ├── Button/
+│   │   │   ├── Modal/
+│   │   │   └── Loader/
+│   │   │
+│   │   ├── pages/
+│   │   │   ├── Home/
+│   │   │   ├── Login/
+│   │   │   ├── Register/
+│   │   │   ├── Dashboard/
+│   │   │   └── Profile/
+│   │   │
+│   │   ├── layouts/
+│   │   │   ├── MainLayout.jsx
+│   │   │   └── AuthLayout.jsx
+│   │   │
+│   │   ├── hooks/
+│   │   │   ├── useAuth.js
+│   │   │   └── useFetch.js
+│   │   │
+│   │   ├── services/
+│   │   │   ├── api.js
+│   │   │   └── authService.js
+│   │   │
+│   │   ├── context/
+│   │   │   └── AuthContext.jsx
+│   │   │
+│   │   ├── store/
+│   │   │   └── store.js
+│   │   │
+│   │   ├── routes/
+│   │   │   └── AppRoutes.jsx
+│   │   │
+│   │   ├── utils/
+│   │   │   ├── helpers.js
+│   │   │   └── validators.js
+│   │   │
+│   │   ├── styles/
+│   │   │   └── global.css
+│   │   │
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   │
+│   ├── package.json
+│   └── vite.config.js
+│
+│
+├── server/                         # Node + Express Backend
+│   │
+│   ├── src/
+│   │   ├── config/
+│   │   │   ├── db.js
+│   │   │   └── env.js
+│   │   │
+│   │   ├── models/
+│   │   │   ├── User.js
+│   │   │   ├── Product.js
+│   │   │   └── Order.js
+│   │   │
+│   │   ├── controllers/
+│   │   │   ├── authController.js
+│   │   │   ├── userController.js
+│   │   │   └── productController.js
+│   │   │
+│   │   ├── routes/
+│   │   │   ├── authRoutes.js
+│   │   │   ├── userRoutes.js
+│   │   │   └── productRoutes.js
+│   │   │
+│   │   ├── middleware/
+│   │   │   ├── authMiddleware.js
+│   │   │   ├── errorMiddleware.js
+│   │   │   └── uploadMiddleware.js
+│   │   │
+│   │   ├── services/
+│   │   │   ├── authService.js
+│   │   │   ├── userService.js
+│   │   │   └── emailService.js
+│   │   │
+│   │   ├── utils/
+│   │   │   ├── generateToken.js
+│   │   │   └── logger.js
+│   │   │
+│   │   ├── validators/
+│   │   │   ├── authValidator.js
+│   │   │   └── userValidator.js
+│   │   │
+│   │   ├── app.js
+│   │   └── server.js
+│   │
+│   ├── package.json
+│   └── .env
+│
+│
+├── .gitignore
+├── .env.example
+├── package.json
+├── README.md
+└── docker-compose.yml
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
