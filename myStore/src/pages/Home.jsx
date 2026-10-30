@@ -1,16 +1,10 @@
-import { Footer } from "../../components/Footer/Footer.jsx"
-import Navbar from "../../components/Navbar/Navbar.jsx"
-import Header from "../../components/Header/Hearder.jsx"
 import "./style.css";
-import Main from "./main.jsx";
 
 
 export const Home = ()=>{
     return(
         <>
 
-        <Navbar />
-        <Header />
         <main>
             <div className="banner">
                 <div className="background">
@@ -23,11 +17,10 @@ export const Home = ()=>{
         </main>
 
         {/* <Collection /> */}
-        <Main />
       
   
 
-        <Footer />
+       
         </>
     )
 }

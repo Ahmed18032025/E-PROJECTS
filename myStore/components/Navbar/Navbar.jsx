@@ -1,4 +1,3 @@
-import {Home} from "../../src/pages/Home"
 import "./Navbar.css"
 function Navbar() {
     return (
