@@ -1,5 +1,5 @@
 
-const API_URL = "http://localhost:3000/api";
+export const API_URL = "http://localhost:5000/api";
 
 // Fetch all products from a collection
 export const fetchProducts = async (collection) => {

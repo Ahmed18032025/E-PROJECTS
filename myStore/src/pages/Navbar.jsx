@@ -4,6 +4,8 @@ import { Men } from "./Men.jsx";
 import { Women } from "./Women.jsx";
 import { Kids } from "./Kids.jsx";
 import Collection from "./collection.jsx";
+// import { Routes, Route } from "react-router-dom";
+import AdminPanel from "../../components/AdminPanel.jsx";
 
 function Navbar() {
   return (
@@ -15,6 +17,7 @@ function Navbar() {
       <Route path="/men" element={<Men />} />
       <Route path="/women" element={<Women />} />
       <Route path="/kids" element={<Kids />} />
+      <Route path="/admin" element={<AdminPanel />} />
       <Route path="/" element={<Collection />} />
     </Routes>
     

@@ -3,3 +3,10 @@
   padding:0;
   color:black;
 }
+
+.btn-sizes:focus {
+  /* background-color: #29cdff; */
+  background-image: linear-gradient(#620000 100%);
+  color: white;
+  transform: scale(1.1);
+}

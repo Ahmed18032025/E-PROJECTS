@@ -2,6 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import Header from "../components/Header/Header.jsx";
 import Navbar from "./pages/Navbar.jsx";
 import { Footer } from "../components/Footer/Footer.jsx";
+import "../src/App.css";
 
 function App() {
   return (
